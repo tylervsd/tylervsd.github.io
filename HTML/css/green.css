@@ -1,0 +1,24 @@
+/* Green */		
+.current-band, .thumbnails li:hover .hover{ 
+background-color: #51a351!important;
+background-image: -moz-linear-gradient(top,#46ca7b,#51a351);
+background-image: -webkit-gradient(linear,0 0,0 100%,from(#46ca7b),to(#51a351));
+background-image: -webkit-linear-gradient(top,#46ca7b,#51a351);
+background-image: -o-linear-gradient(top,#46ca7b,#51a351);
+background-image: linear-gradient(to bottom,#46ca7b,#51a351);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#51a351',endColorstr='#51a351',GradientType=0);}
+::selection { background: #64e297; }
+::-moz-selection { background: #64e297; }
+a{ color:#46ca7b}
+.close-btn, section > .row > .span4 > h5{ color:#46ca7b!important}
+.progress .bar{ background-color:#46ca7b;
+-moz-box-shadow: inset 0px -22px 20px -10px #51a351;
+-webkit-box-shadow: inset 0px -22px 20px -10px #51a351;
+box-shadow: inset 0px -22px 20px -10px #51a351;}
+.btn-submit, .btn-submit:hover {
+background-color: #46ca7b;
+-moz-box-shadow: inset 0px -22px 20px -10px #51a351;
+-webkit-box-shadow: inset 0px -22px 20px -10px #51a351;
+box-shadow: inset 0px -22px 20px -10px #51a351;
+}
