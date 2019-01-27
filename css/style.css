@@ -1,0 +1,298 @@
+/*
+Theme Name: MIO resume
+Description: Onepage Personal Resume/Portfolio Template 
+Version: 1.0
+Author: kaylog
+Author URI: http://themeforest.net/user/kary_au
+
+1. General
+2. Navigation
+3. Hero
+4. Section
+4.1. Portfolio
+4.2. Technical Skills
+4.3. Contact 
+5. Footer
+6. Responsive
+
+*/
+
+/* 1. General */ 
+body{ background-color:#e4e6e5; }
+body, input, button, select, textarea, .navbar-search .search-query { font-family: 'Droid Sans', sans-serif; color:#444}
+body, li, address{ line-height:24px }
+hr{ margin:30px 0px; border-top:1px dashed #ccc; border-bottom:none}
+ul, ol{ margin-left:17px}
+li{ list-style: square}
+::selection { background: #66c6f8; }
+::-moz-selection { background: #66c6f8; }
+.go-to-top{ background: #d6d6d4; position:fixed; right:0px; top:50%; margin-top:-20px; padding:20px 15px; font-weight:bold; font-size:20px; text-transform:uppercase; display:none}
+
+/* 2. Navigation */
+.navbar-inverse .brand { color:#fff}
+.navbar-inner .container { position:relative; overflow:hidden }
+.navbar-inner .container .brand{ position:absolute; }
+.navbar .nav > li { line-height: 35px; list-style:none }
+.navbar .nav > li a { background:url(../images/separation.png) no-repeat 0 19px; outline:none}
+.navigation .nav li.active a, .navigation .nav li.active > a:hover, .navigation .nav .active > a:focus { background:url(../images/separation.png) no-repeat 0 19px}
+.navbar .nav > li.first a, .navbar .nav > li.first a:hover { background:none }
+.navbar .brand { padding-top:14px; padding-bottom:14px; font-size:24px}
+.navbar-inverse .navbar-inner {background-color: #444;
+background-image: -moz-linear-gradient(top,#444,#111);
+background-image: -webkit-gradient(linear,0 0,0 100%,from(#444),to(#111));
+background-image: -webkit-linear-gradient(top,#444,#111);
+background-image: -o-linear-gradient(top,#444,#111);
+background-image: linear-gradient(to bottom,#444,#111);
+background-repeat: repeat-x;
+border-color: #252525;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222',endColorstr='#ff111111',GradientType=0);
+}
+.navigation .current-band { height: 5px; position: absolute; z-index: 0; background: #08c;}
+.navbar-inverse .btn-navbar { color: #fff; text-shadow: none; background-color: #333; background-image: none; border-radius:0px; border:none; margin-right:15px; margin-top:6px }
+
+/* 3. Hero */
+.hero { background-color:#f3f3f3; margin-bottom:30px; border-bottom:1px solid #d5d5d5; display:none;
+background-image: -moz-linear-gradient(top,#f3f3f3,#dddddd);
+background-image: -webkit-gradient(linear,0 0,0 100%,from(#f3f3f3),to(#dddddd));
+background-image: -webkit-linear-gradient(top,#f3f3f3,#dddddd);
+background-image: -o-linear-gradient(top,#f3f3f3,#dddddd);
+background-image: linear-gradient(to bottom,#f3f3f3,#dddddd);
+background-repeat: repeat-x;}
+.hero .hero-unit{ background-color: transparent; margin-bottom:0px; padding-top:110px; position:relative}
+.hero-unit .span3{ float:right }
+.hero-unit h1{ margin-top:0px; line-height:1; font-size:50px }
+.hero-unit h2{ font-size:24.5px}
+.hero-unit address{ line-height:30px; margin-top:2px}
+.hero-unit abbr[title], .hero-unit abbr[data-original-title]{ width:20px; display:inline-block; text-align:center; background: url(../images/bg-perpendicular.png) repeat; border-bottom:none; line-height:24px}
+.hero-unit .avatar{  background: url(../images/bg-perpendicular.png) repeat #fff; padding:10px;}
+.social { margin:0px; background-color:#ccc; position:absolute; bottom:0px;}
+.social li{ float:left; display:block; border-left:dashed 1px #b3b3b3;  background-color:#d6d6d4;}
+.social li:first-child{ border:none }
+.social li a{ display:block; width:55px; height:42px; background-color:#d6d6d4; background-repeat:no-repeat; background-image:url(../images/social.png);}
+.social li a:hover{ 
+-webkit-transition: background 0.2s ease;
+-moz-transition: background 0.2s ease;
+-ms-transition: background 0.2s ease;
+-o-transition: background 0.2s ease;
+transition: background 0.2s ease;
+}
+.social li.facebook a{ background-position: 4px 0}
+.social li.youtube a{ background-position: -46px 0}
+.social li.twitter a{ background-position: -100px 0}
+.social li.linked a{ background-position: -160px 0}
+.social li.google a{ background-position: -214px 0}
+.social li.pinterest a{ background-position: -271px 0}
+.social li.facebook a:hover{ background-position: 4px -50px; background-color:#3b5998}
+.social li.youtube a:hover{ background-position: -46px -50px; background-color:#ff3939}
+.social li.twitter a:hover{ background-position: -100px -50px; background-color:#32ccfe}
+.social li.linked a:hover{ background-position: -160px -50px; background-color:#0073b2}
+.social li.google a:hover{ background-position: -214px -50px; background-color:#ffffff}
+.social li.pinterest a:hover{ background-position: -271px -50px; background-color:#ae2c2a}
+
+/* 4. Section */
+section > .row { margin-bottom:30px }
+section > .row > .span4{ text-align:right }
+section > .row > .span4 h3{ margin:0px 0px 8px; line-height:34px; font-size:20.5px }
+section > .row > .span8 h2{ margin-bottom:15px; }
+section > .row > .span8 h2 span{  background: url(../images/bg-perpendicular.png) repeat #d6d6d4; height:17px; display:inline-block; width:24px; height:24px; margin-right:5px }
+section > .row > .span4 > h4 {background: url(../images/bg-perpendicular.png) repeat; padding:2px 4px; width:auto; display:inline }
+section > .row > .span4 > h5 { font-size:15.5px; margin-top:8px; color:#08c }
+
+/* 4.1. Portfolio */
+.thumbnails li{ position:relative}
+.page{ display:none; position:relative}
+.page .txt{ position:absolute; background: rgb(0, 0, 0); background: rgba(17, 17, 17, 0.8); z-index:20; top:50%; width:50%; right:0px; padding:30px; color:#fff;}
+
+.thumbnails li .info{ position:absolute; bottom:25px; z-index:11; width:80%; padding:0px 11%; text-align:center; left:0px;
+-webkit-transition: bottom 0.5s ease;
+-moz-transition: bottom 0.5s ease;
+-ms-transition: bottom 0.5s ease;
+-o-transition: bottom 0.5s ease;
+transition: bottom 0.5s ease;}
+
+.thumbnails li:hover .info{ bottom:50px; left:0px; text-decoration:none;
+-webkit-transition: bottom 0.5s ease;
+-moz-transition: bottom 0.5s ease;
+-ms-transition: bottom 0.5s ease;
+-o-transition: bottom 0.5s ease;
+transition: bottom 0.5s ease;}
+
+.thumbnails li .info h5{ text-align: center; color:#FFF; text-shadow: 1px 1px 1px #000, 3px 3px 5px black; cursor:pointer; margin-bottom:6px} 
+.thumbnails li .info p{ display:none; font-size:13px; color:#fff;
+-webkit-transition: display 0.5s ease;
+-moz-transition: display 0.5s ease;
+-ms-transition: display 0.5s ease;
+-o-transition: display 0.5s ease;
+transition: display 0.5s ease;}
+
+.thumbnails li:hover .info p{ display:block; text-decoration:none;
+-webkit-transition: display 0.5s ease;
+-moz-transition: display 0.5s ease;
+-ms-transition: display 0.5s ease;
+-o-transition: display 0.5s ease;
+transition: display 0.5s ease;}
+
+.thumbnails li .hover{
+position: absolute;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+z-index: 10;
+pointer-events: none;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+border: none;
+border-width: 0;
+-moz-border-image: url(../images/hover-1.gif) 10 10 10 10 repeat;
+-webkit-border-image: url(../images/hover-1.gif) 10px 10px 10px 10px repeat;
+border-image: url(../images/hover-1.gif) 10 10 10 10 repeat;
+-webkit-transition: border-width 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+-moz-transition: border-width 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+-o-transition: border-width 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+transition: border-width 0.5s cubic-bezier(0.19, 1, 0.22, 1);}
+
+.thumbnails li:hover .hover{
+pointer-events: none;
+background-color: #0e90d2;
+background-image: -moz-linear-gradient(top,#149bdf,#0480be);
+background-image: -webkit-gradient(linear,0 0,0 100%,from(#149bdf),to(#0480be));
+background-image: -webkit-linear-gradient(top,#149bdf,#0480be);
+background-image: -o-linear-gradient(top,#149bdf,#0480be);
+background-image: linear-gradient(to bottom,#149bdf,#0480be);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff149bdf',endColorstr='#ff0480be',GradientType=0);
+-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15);
+-moz-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15);
+box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15);
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+border-width: 10px 10px 10px 10px;
+}
+
+.thumbnail{ border: 1px dashed #ccc; -webkit-border-radius:0; -moz-border-radius:0; border-radius:0; padding:10px; position:relative}
+.thumbnails li a:hover{ text-decoration:none}
+a.thumbnail:hover, a.thumbnail:focus{ border:solid 1px #e3e3e3; border-color:#e3e3e3; box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow:none;}
+.thumbnail>img { height: inherit}
+.overlay{position: fixed; opacity: 0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; background: #000; height: auto; width: auto; left: 0; top: 0;bottom:0; right:0; z-index: 5000; overflow:auto; overflow-y:scroll}
+.popup {width: 100px;  z-index: 5001; top: 0px; left: 50%;  background-color:transparent; padding: 0px;  position:fixed;  display:none  }
+.popup .close-btn{ background:rgba(214, 214, 214, 1); width:25px; height:25px; z-index:5002; font-size:24px; padding:15px; position:absolute; top:0px; right:0px; color:#08c; text-shadow:none; text-align:center; font-weight:bold; cursor:pointer; display:none}
+.popup .close-btn:hover, .popup .close-btn:focus{ color:#005580}
+.no-scroll{ overflow:hidden}
+
+/* 4.2. Technical Skills */
+.progress{ height:34px; margin-bottom:25px;  -webkit-border-radius:0; -moz-border-radius:0; border-radius:0; border:solid 1px #ccc}
+.progress .bar{background: url(../images/bg-perpendicular.png) repeat; background-color:#149bdf; 
+-moz-box-shadow:inset 0px -22px 20px -10px  #0480be;
+-webkit-box-shadow: inset 0px -22px 20px -10px  #0480be;
+box-shadow:inset 0px -22px 20px -10px  #0480be;}
+
+/* 4.3. Contact */
+input[type="text"]{ height:28px;  -webkit-border-radius:0px; -moz-border-radius: 0px; border-radius: 0px; }
+textarea{ height:140px; -webkit-border-radius:0px; -moz-border-radius: 0px; border-radius: 0px;}
+.btn-submit{ background-color: #149bdf; -moz-box-shadow: inset 0px -22px 20px -10px #0480be; -webkit-box-shadow: inset 0px -22px 20px -10px #0480be;
+box-shadow: inset 0px -22px 20px -10px #0480be; color:#fff; border:none; height:38px; background-image: none;-webkit-border-radius:0px; -moz-border-radius: 0px; border-radius: 0px; text-shadow:none; color:#fff}
+.btn-submit:hover{background-color: #149bdf; text-shadow:none; color:#fff}
+.form{ position:relative}
+.loading{ background:url(../images/loader-brown.gif) no-repeat; width:16px; height:16px; position:absolute; left:85px; bottom:10px; display:none}
+
+/* 5. Footer */
+footer{ background-color:#d4d6d5; padding:15px 0px 5px; border-top:1px solid #ccc }
+
+
+/* 6. Responsive */
+
+/* Large desktop */
+@media (min-width: 1200px) { ... }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	.hero .hero-unit .span3{ }
+	.hero .hero-unit h1{ font-size:42px}
+	.hero .hero-unit h2{ font-size:28px}
+	address{ font-size:16px}
+	.nav-collapse .nav>li{ float:left}
+	.navbar .btn-navbar, .navbar .me-name{ display:none}
+	.nav-collapse, .nav-collapse.collapse{ overflow:hidden; height:auto}
+	.navbar-fixed-top{ margin:0px}
+	.navbar-fixed-top, .navbar-fixed-bottom{ position:fixed}
+	.go-to-top{ display:none}
+	.navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .nav > li > a:focus, .navbar-inverse .nav-collapse .dropdown-menu a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:focus { background-color:transparent}
+	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner{ padding:0px}
+	.nav-collapse .nav>li>a, .nav-collapse .dropdown-menu a{ font-weight:normal}
+	.navigation .nav li.active a, .navigation .nav li.active > a:hover, .navigation .nav .active > a:focus, .navigation .nav li a:hover{ color:#fff}
+	.hero .hero-unit{ padding:110px 0px 60px}	
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	.hero .hero-unit{ padding:20px 20px 60px}
+	.hero-unit .avatar{ margin-bottom:20px }
+	.navbar-fixed-top{ margin:0px}
+	section > .row > .span8 h2, section > .row > .span4 h3, section > .row > .span4 > h4{ margin-bottom:10px }
+	section > .row > .span4 > h4{ display:block}
+	section > .row > .span4{ text-align:left}
+	//.thumbnails-portfolio li.span6, .thumbnails-portfolio li.span3{ float:left; width:auto}
+	//.navbar{ height: 48px}
+	.current-band{ display:none}	
+	.nav-collapse .nav>li>a, .nav-collapse .dropdown-menu a{ font-weight:normal; background:none}
+	.nav-collapse, .nav-collapse.collapse{ //width:100%}
+	.navbar-inner .container, .nav-collapse, .nav-collapse.collapse{ overflow:visible}
+	.span6 .thumbnail{ width:356px}
+	.span4 .thumbnail{ width:220px}
+	.navigation{ display:none}
+	.navigation .nav li.active a, .navigation .nav li.active > a:hover, .navigation .nav .active > a:focus{ background-image:none}
+	.navbar .brand{ padding-top:8px; display:none}
+	.navbar-fixed-top{ position:fixed }
+	.navbar .nav{ z-index:6000; background-color:#111; margin-right:-5px; }
+	.navbar .nav a:hover{ color:#fff!important}
+	.hero-unit h1{ font-size:43px }
+	.hero{ margin-top:73px}
+ }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	.span6 .thumbnail, .span6 .thumbnail img{ width:220px}
+	.span4 .thumbnail{ width:220px}
+	.social li a{ width:39px; }
+	.social li.facebook a{ background-position: -2px 0;}
+	.social li.youtube a{ background-position: -54px 0;}
+	.social li.twitter a{ background-position: -108px 0}
+	.social li.linked a{ background-position: -168px 0}
+	.social li.google a{ background-position: -222px 0}
+	.social li.pinterest a{ background-position: -279px 0}
+	.social li.facebook a:hover{ background-position: -2px -50px;}
+	.social li.youtube a:hover{ background-position: -54px -50px;}
+	.social li.twitter a:hover{ background-position: -108px -50px;}
+	.social li.linked a:hover{ background-position: -168px -50px;}
+	.social li.google a:hover{ background-position: -222px -50px; }
+	.social li.pinterest a:hover{ background-position: -279px -50px;}
+	.page .txt{ top:100%; width:auto}
+	
+}
+
+@media print {
+	h1, h2, h3, h4{line-height:30px!important; margin:0px 0px 10px 0px!important}
+    .navbar, .go-to-top{ display:none!important}
+	.hero-unit h1, .hero-unit h2, .hero-unit h3{ line-height:40px!important; margin:0px 0px 15px 0px!important }
+	.hero-unit { margin-top:0px; position:relative; padding-top:0px!important }
+	.hero-unit .avatar{ padding:0px}
+	.hero-unit .span2{ position:absolute; top:0px; left:0px; }
+	.hero-unit .span6, .hero-unit .span4 { margin-left:150px; }
+	.hero-unit .span4 { margin-bottom:30px}
+	.social{ display:none}
+	section > .row > .span4{ text-align:left}
+	section > .row > .span4 h3 { margin:0px}
+	section > .row > .span4 > h4, section > .row > .span4 > h5 { display:inline}
+	.row-fluid .thumbnails > li { list-style:none;}
+	.row-fluid .thumbnails > li.span4 { display:inline;}
+	.row-fluid .thumbnails > li.span4 a img { width:30%}
+	.row-fluid .thumbnails li a { padding:0px; border:none}
+	.row-fluid .thumbnails li .info { position:static; padding:0px}
+	.row-fluid .thumbnails li a .hover, .row-fluid .thumbnails li a .info { display:none }
+	.progress .bar {border-right:solid 10px #ccc!important}
+	.contact .span4 form { display:none}
+	
+	
+}
